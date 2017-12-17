@@ -1,3 +1,6 @@
+%% trains a decision tree on data x, with classes c, number of classes nc, and range of each class, nx
+%% does not work
+
 function tr=treetrain(c,nc,x,nx)
 
     tr=struct()
