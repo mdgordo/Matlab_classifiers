@@ -1,3 +1,5 @@
+%% Attempts to train a model using treetrain on the Titanic dataset
+
 %read data
 train_data = readtable('train.csv');
 %how to drop bad columns
@@ -23,7 +25,7 @@ Embarked(C) = 2;
 train_data(:,{'Embarked'}) = [];
 train_data = [train_data, table(Embarked)];
 
-%insert code here to fix ticket names
+% fix ticket names
 Ticketi=double(char(train_data.Ticket));
 Ticketi=Ticketi(:,1);
 Ticket=ones(size(train_data,1),1);
