@@ -1,10 +1,8 @@
-%SCRIPT5   the following functions are useful: load, rng, size, zeros, randsample,
-%randperm figure, imagesc, title, xlabel, ylabel, print, trace, fitctree,
-%predict,view
+%% trains and tests CART on leaf dataset using built in fitctree function in Matlab
 
 load('leaf.mat');
    
-%% leave one out
+%% leave one out cross validation
 for i=1:size(c,1)
     ctemp=c;
     xtemp=x;
