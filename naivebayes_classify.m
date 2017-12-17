@@ -1,4 +1,4 @@
-%%
+%% using Md output of naivebayes_train, classifies data y into classes b
 
 function b = naivebayes_classify(Md,y)
     %% Put y's observations into Md's histogram bins
