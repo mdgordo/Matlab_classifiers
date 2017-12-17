@@ -1,3 +1,5 @@
+%% trains and tests naive bayesian classifier on seed data set
+
 file='seed_data.mat'
 data = load(file);
 
@@ -7,7 +9,7 @@ c=data.c
 nc=data.nc
 nk=6
 
-%% leave one out
+%% leave one out cross validation
 for i=1:size(c,1)
     xtemp=x;
     ctemp=c;
