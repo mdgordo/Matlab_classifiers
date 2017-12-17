@@ -1,4 +1,6 @@
 
+%% trains a naive bayesian classifier on data x with classes c, number of classes nc, and number of histogram bins nk
+
 function Md = naivebayes_train(c,nc,x,nk)
 %% creates histogram for each attribute and bins observations
     for i=1:size(x,2)
